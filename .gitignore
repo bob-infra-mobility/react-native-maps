@@ -3,3 +3,5 @@ android/.DS_Store
 ios/.DS_Store
 android/build/
 ios/build/
+node_modules
+
