@@ -5,7 +5,7 @@
   "main": "lib/index.js",
   "author": "Ansh Arora<ansh@justbobit.com>",
   "homepage": "https://github.com/react-native-maps/react-native-maps#readme",
-  "version": "1.20.1",
+  "version": "2.0.1",
   "license": "MIT",
   "publishConfig": {
     "access": "public"
