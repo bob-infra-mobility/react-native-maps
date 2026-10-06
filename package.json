@@ -1,12 +1,15 @@
 {
-  "name": "react-native-maps",
-  "description": "React Native Mapview component for iOS + Android",
+  "name": "@bobrides/react-native-maps",
+  "description": "Advanced React Native Mapview component for iOS + Android",
   "source": "src/index",
   "main": "lib/index.js",
-  "author": "Leland Richardson <leland.m.richardson@gmail.com>",
+  "author": "Ansh Arora<ansh@justbobit.com>",
   "homepage": "https://github.com/react-native-maps/react-native-maps#readme",
   "version": "1.20.1",
   "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "lint": "eslint . --max-warnings 0",
     "tscheck": "tsc --noEmit",
@@ -33,7 +36,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/react-native-maps/react-native-maps"
+    "url": "git+https://github.com/react-native-maps/react-native-maps.git"
   },
   "keywords": [
     "react",

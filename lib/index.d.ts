@@ -26,6 +26,8 @@ export type { MapCalloutSubviewProps } from './MapCalloutSubview';
 export { default as AnimatedRegion } from './AnimatedRegion';
 export { default as Geojson } from './Geojson';
 export type { GeojsonProps } from './Geojson';
+export { default as DropMarker, DROP_MARKER_COLOR, dropMarkerExtent } from './DropMarker';
+export type { DropMarkerProps, DropMarkerVariant, DropMarkerExtent } from './DropMarker';
 export { Marker, Overlay };
 export type { MapViewProps };
 export { Animated, MAP_TYPES };

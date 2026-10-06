@@ -515,6 +515,20 @@ public class MapMarker extends MapFeature {
     update(true);
   }
 
+  // Under the New Architecture the SizeReportingShadowNode never runs, so updateExtraData
+  // never delivers this marker's size and createDrawable() falls back to a 100x100 px
+  // bitmap, cropping any custom marker view larger than that. Fabric still lays this
+  // view out, so take the size from here (same approach as upstream react-native-maps 1.29).
+  @Override
+  protected void onLayout(boolean changed, int l, int t, int r, int b) {
+    super.onLayout(changed, l, t, r, b);
+    int layoutWidth = r - l;
+    int layoutHeight = b - t;
+    if (layoutWidth > 0 && layoutHeight > 0 && (layoutWidth != width || layoutHeight != height)) {
+      update(layoutWidth, layoutHeight);
+    }
+  }
+
   private Bitmap mLastBitmapCreated = null;
 
   private void clearDrawableCache() {
